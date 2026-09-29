@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #111419;
+}
+
+.split-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- Left Panel (Branding) --- */
+.left-panel {
+    flex: 0 0 45%;
+    background-color: #f2500c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.brand-content {
+    max-width: 80%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.heart-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.logo-text {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* --- Right Panel (Forms) --- */
+.right-panel {
+    flex: 1;
+    background-color: #111419;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 460px;
+}
+
+/* Navigation & Branding inside Right Panel */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    gap: 8px;
+}
+
+.small-logo {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.small-logo .heart-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.small-logo .logo-text {
+    font-size: 28px;
+}
+
+/* Filled Icon for Sign Up / Reset Pass */
+.filled-heart-icon {
+    width: 28px;
+    height: 28px;
+    background-color: #f2500c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text-small {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Headings */
+.welcome-text {
+    color: white;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    color: white;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    color: #8c8c8c;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* Form Elements */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    gap: 16px;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 52px;
+    background-color: #3b3b3b;
+    border: none;
+    border-radius: 12px;
+    padding: 0 16px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 24px;
+}
+
+.forgot-password a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Primary Button */
+.primary-btn, .login-btn {
+    width: 100%;
+    height: 52px;
+    background-color: #f2500c;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Role Selection (Sign Up) */
+.role-group {
+    margin-bottom: 30px;
+}
+
+.role-label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.role-options {
+    display: flex;
+    gap: 16px;
+}
+
+.role-option {
+    flex: 1;
+}
+
+.role-option input[type="radio"] {
+    display: none;
+}
+
+.role-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 52px;
+    background-color: #3b3b3b;
+    color: #f2500c;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.role-option input[type="radio"]:checked + .role-btn {
+    background-color: #4a4a4a; 
+}
+
+/* Social Login */
+.social-login {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.social-btn {
+    flex: 1;
+    height: 48px;
+    background-color: #3b3b3b;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Footers */
+.create-account {
+    text-align: center;
+}
+
+.create-account a {
+    color: #f2500c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.auth-footer {
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 15px;
+}
+
+.auth-footer a {
+    color: #f2500c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .split-layout {
+        flex-direction: column;
+    }
+    
+    .left-panel {
+        padding: 60px 20px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

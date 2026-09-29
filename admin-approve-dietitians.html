@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=admin/approve-dietitians.php">
+    <title>Health Track - Approve Dietitians</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-full-page">
+    
+    <div class="admin-page-container">
+        <!-- Top Navigation -->
+        <a href="admin-dashboard.html" class="nav-link back-link top-back">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back
+        </a>
+
+        <!-- Page Header -->
+        <header class="admin-page-header">
+            <div class="logo-container small-logo">
+                <div class="filled-heart-icon">
+                    <svg viewBox="0 0 24 24" fill="white" width="16" height="16">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <h1 class="logo-text-small" style="font-size: 24px;">Admin Dietitians</h1>
+            </div>
+        </header>
+
+        <!-- Controls Bar -->
+        <div class="admin-controls-bar">
+            <div class="controls-left">
+                <div class="title-icon icon-blue-outline">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                        <polyline points="16 11 18 13 22 9"></polyline>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="section-title">Approve Dietitians</h2>
+                    <p class="section-subtitle">4 pending review</p>
+                </div>
+            </div>
+
+            <div class="pending-badge-large">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                4 pending
+            </div>
+        </div>
+
+        <!-- Dietitians Grid -->
+        <div class="dietitian-grid">
+            
+            <!-- Dr. James Park -->
+            <div class="dietitian-card">
+                <div class="card-header-flex">
+                    <div class="user-cell">
+                        <div class="avatar avatar-blue">JP</div>
+                        <div class="user-info">
+                            <span class="user-name" style="font-size: 16px;">Dr. James Park</span>
+                            <span class="user-email">Sports Nutrition</span>
+                        </div>
+                    </div>
+                    <span class="status-badge status-pending">Pending</span>
+                </div>
+
+                <div class="details-grid">
+                    <div class="detail-box">
+                        <span class="detail-label">License</span>
+                        <span class="detail-val">RD-2024-002</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Experience</span>
+                        <span class="detail-val">5 years</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">University</span>
+                        <span class="detail-val">Stanford University</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Submitted</span>
+                        <span class="detail-val">Jul 12, 2024</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="card-action-btn view-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        View Profile
+                    </button>
+                    <button class="card-action-btn approve-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Approve
+                    </button>
+                    <button class="card-action-btn reject-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        Reject
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dr. Sarah Miller -->
+            <div class="dietitian-card">
+                <div class="card-header-flex">
+                    <div class="user-cell">
+                        <div class="avatar avatar-blue">SM</div>
+                        <div class="user-info">
+                            <span class="user-name" style="font-size: 16px;">Dr. Sarah Miller</span>
+                            <span class="user-email">Weight Management</span>
+                        </div>
+                    </div>
+                    <span class="status-badge status-pending">Pending</span>
+                </div>
+
+                <div class="details-grid">
+                    <div class="detail-box">
+                        <span class="detail-label">License</span>
+                        <span class="detail-val">RD-2024-001</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Experience</span>
+                        <span class="detail-val">8 years</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">University</span>
+                        <span class="detail-val">Johns Hopkins</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Submitted</span>
+                        <span class="detail-val">Jul 10, 2024</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="card-action-btn view-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        View Profile
+                    </button>
+                    <button class="card-action-btn approve-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Approve
+                    </button>
+                    <button class="card-action-btn reject-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        Reject
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dr. Priya Nair -->
+            <div class="dietitian-card">
+                <div class="card-header-flex">
+                    <div class="user-cell">
+                        <div class="avatar avatar-blue">PN</div>
+                        <div class="user-info">
+                            <span class="user-name" style="font-size: 16px;">Dr. Priya Nair</span>
+                            <span class="user-email">Pediatric Nutrition</span>
+                        </div>
+                    </div>
+                    <span class="status-badge status-pending">Pending</span>
+                </div>
+
+                <div class="details-grid">
+                    <div class="detail-box">
+                        <span class="detail-label">License</span>
+                        <span class="detail-val">RD-2024-003</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Experience</span>
+                        <span class="detail-val">12 years</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">University</span>
+                        <span class="detail-val">Harvard Medical</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Submitted</span>
+                        <span class="detail-val">Jul 14, 2024</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="card-action-btn view-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        View Profile
+                    </button>
+                    <button class="card-action-btn approve-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Approve
+                    </button>
+                    <button class="card-action-btn reject-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        Reject
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dr. Tom Wilson -->
+            <div class="dietitian-card">
+                <div class="card-header-flex">
+                    <div class="user-cell">
+                        <div class="avatar avatar-blue">TW</div>
+                        <div class="user-info">
+                            <span class="user-name" style="font-size: 16px;">Dr. Tom Wilson</span>
+                            <span class="user-email">Diabetes Management</span>
+                        </div>
+                    </div>
+                    <span class="status-badge status-pending">Pending</span>
+                </div>
+
+                <div class="details-grid">
+                    <div class="detail-box">
+                        <span class="detail-label">License</span>
+                        <span class="detail-val">RD-2024-004</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Experience</span>
+                        <span class="detail-val">6 years</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">University</span>
+                        <span class="detail-val">Yale University</span>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Submitted</span>
+                        <span class="detail-val">Jul 15, 2024</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="card-action-btn view-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        View Profile
+                    </button>
+                    <button class="card-action-btn approve-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Approve
+                    </button>
+                    <button class="card-action-btn reject-action">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        Reject
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

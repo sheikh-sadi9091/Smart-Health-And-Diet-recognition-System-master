@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=admin/reports.php">
+    <title>Health Track - Generate Reports</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-full-page">
+    
+    <div class="admin-page-container">
+        <!-- Top Navigation -->
+        <a href="admin-dashboard.html" class="nav-link back-link top-back">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back
+        </a>
+
+        <!-- Page Header -->
+        <header class="admin-page-header">
+            <div class="logo-container small-logo">
+                <div class="filled-heart-icon">
+                    <svg viewBox="0 0 24 24" fill="white" width="16" height="16">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <h1 class="logo-text-small" style="font-size: 24px;">Admin Reports</h1>
+            </div>
+        </header>
+
+        <!-- Controls Bar -->
+        <div class="admin-controls-bar">
+            <div class="controls-left">
+                <div class="title-icon icon-purple-outline">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="section-title">Generate Reports</h2>
+                    <p class="section-subtitle">Analytics and system reports</p>
+                </div>
+            </div>
+
+            <div class="time-toggle">
+                <button class="toggle-btn text-orange">Weekly</button>
+                <button class="toggle-btn active">Monthly</button>
+            </div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-icon-small icon-green">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path><path d="M7 2v20"></path><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"></path></svg>
+                </div>
+                <div class="kpi-val">4,235</div>
+                <div class="kpi-label">Total Meals Logged</div>
+            </div>
+            
+            <div class="kpi-card">
+                <div class="kpi-icon-small icon-blue">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                </div>
+                <div class="kpi-val">1.8L</div>
+                <div class="kpi-label">Avg Daily Water</div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon-small icon-purple">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </div>
+                <div class="kpi-val">7.2h</div>
+                <div class="kpi-label">Avg Sleep Duration</div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon-small icon-orange">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                </div>
+                <div class="kpi-val">342</div>
+                <div class="kpi-label">Active Users</div>
+            </div>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="chart-card">
+            <h3 class="chart-title">Monthly User Activity</h3>
+            <div class="chart-container">
+                <div class="y-axis">
+                    <span>1400</span>
+                    <span>1050</span>
+                    <span>700</span>
+                    <span>350</span>
+                    <span>0</span>
+                </div>
+                <div class="chart-area">
+                    <!-- Grid Lines -->
+                    <div class="grid-line" style="bottom: 100%;"></div>
+                    <div class="grid-line" style="bottom: 75%;"></div>
+                    <div class="grid-line" style="bottom: 50%;"></div>
+                    <div class="grid-line" style="bottom: 25%;"></div>
+                    <div class="grid-line" style="bottom: 0;"></div>
+                    
+                    <!-- Bars -->
+                    <div class="bar-group">
+                        <div class="bar" style="height: 15%;"></div>
+                        <span class="x-label">Week 1</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar" style="height: 20%;"></div>
+                        <span class="x-label">Week 2</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar" style="height: 18%;"></div>
+                        <span class="x-label">Week 3</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar" style="height: 25%;"></div>
+                        <span class="x-label">Week 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Reports Grid -->
+        <div class="reports-grid">
+            
+            <!-- User Growth Report -->
+            <div class="report-detail-card">
+                <div class="report-header">
+                    <div class="report-icon icon-green-outline">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <div class="report-title-box">
+                        <h3>User Growth Report</h3>
+                        <p>New registrations, active users, churn rate</p>
+                    </div>
+                </div>
+                <ul class="report-list list-green">
+                    <li>+12% this week</li>
+                    <li>1,284 total users</li>
+                    <li>342 active today</li>
+                </ul>
+                <button class="export-btn">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Export Report
+                </button>
+            </div>
+
+            <!-- Nutrition Compliance -->
+            <div class="report-detail-card">
+                <div class="report-header">
+                    <div class="report-icon icon-orange-outline">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    </div>
+                    <div class="report-title-box">
+                        <h3>Nutrition Compliance</h3>
+                        <p>Calorie targets, macro tracking adherence</p>
+                    </div>
+                </div>
+                <ul class="report-list list-orange">
+                    <li>78% hit calorie goal</li>
+                    <li>4,235 meals logged</li>
+                    <li>Avg 1,920 kcal/day</li>
+                </ul>
+                <button class="export-btn">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Export Report
+                </button>
+            </div>
+
+            <!-- Hydration Report -->
+            <div class="report-detail-card">
+                <div class="report-header">
+                    <div class="report-icon icon-blue-outline">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    </div>
+                    <div class="report-title-box">
+                        <h3>Hydration Report</h3>
+                        <p>Water intake trends across all users</p>
+                    </div>
+                </div>
+                <ul class="report-list list-blue">
+                    <li>Avg 1.8L/day</li>
+                    <li>62% met daily goal</li>
+                    <li>Peak: 12-2pm</li>
+                </ul>
+            </div>
+
+            <!-- Sleep Analytics -->
+            <div class="report-detail-card">
+                <div class="report-header">
+                    <div class="report-icon icon-purple-outline">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </div>
+                    <div class="report-title-box">
+                        <h3>Sleep Analytics</h3>
+                        <p>Sleep duration and quality trends</p>
+                    </div>
+                </div>
+                <ul class="report-list list-purple">
+                    <li>Avg 7.2h/night</li>
+                    <li>Score: 81/100</li>
+                    <li>82% regular schedule</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

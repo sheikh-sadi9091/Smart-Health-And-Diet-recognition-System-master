@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=login.php">
+    <title>Health Track - Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="split-layout">
+        <!-- Left Branding Panel -->
+        <div class="left-panel">
+            <div class="brand-content">
+                <div class="logo-container">
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        <path d="M12 8v6M9 11h6" stroke-linecap="round"/>
+                    </svg>
+                    <h1 class="logo-text">Health Track</h1>
+                </div>
+                <p class="subtitle">Smart Health & Diet Recommendation System</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Users</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Dietitians</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Login Panel -->
+        <div class="right-panel">
+            <div class="login-container">
+                <div class="logo-container small-logo">
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        <path d="M12 8v6M9 11h6" stroke-linecap="round"/>
+                    </svg>
+                    <h2 class="logo-text">Health Track</h2>
+                </div>
+
+                <h1 class="welcome-text">Wellcome!</h1>
+
+                <!-- Removed static action attribute, added ID for JavaScript -->
+                <form class="login-form" id="loginForm">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="forgot-password">
+                        <a href="reset-password.html">Fotgot Passwor?</a>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Log in</button>
+                </form>
+
+                <div class="social-login">
+                    <button type="button" class="social-btn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#1877F2"/>
+                            <path d="M15.36 12l.48-3.14h-3.02V6.82c0-.86.4-1.7 1.77-1.7h1.36V2.44C15.95 2.44 14.9 2.3 13.7 2.3c-2.28 0-3.77 1.38-3.77 3.88v2.68H7.29V12h2.64v7.6h3.29V12h2.14z" fill="white"/>
+                        </svg>
+                        Facebook
+                    </button>
+                    <button type="button" class="social-btn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.16v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.16C1.43 8.55 1 10.22 1 12s.43 3.45 1.16 4.93l2.85-2.22.83-.62z" fill="#FBBC05"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.16 7.07l3.68 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                        </svg>
+                        Google
+                    </button>
+                </div>
+
+                <div class="create-account">
+                    <a href="sign-up.html">Create Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script to handle routing based on email -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent standard page reload
+            
+            const emailValue = document.getElementById('email').value.toLowerCase();
+            
+            // Route to Admin Dashboard
+            if (emailValue.includes('admin')) {
+                window.location.href = 'admin-dashboard.html';
+            } 
+            // Route to Dietitian Dashboard
+            else if (emailValue.includes('dr') || emailValue.includes('dietitian')) {
+                window.location.href = 'dietitian-dashboard.html';
+            } 
+            // Route to Standard User Dashboard
+            else {
+                window.location.href = 'user-health-info.html';
+            }
+        });
+    </script>
+</body>
+</html>

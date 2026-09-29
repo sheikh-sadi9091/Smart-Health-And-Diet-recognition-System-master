@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=user/health-info.php">
+    <title>Health Track - Health Information</title>
+    <!-- New CSS file for all dashboard pages -->
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-layout">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container small-logo">
+                    <div class="filled-heart-icon">
+                        <svg viewBox="0 0 24 24" fill="white" width="16" height="16">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text-small">Health Track</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="user-health-info.html" class="nav-link back-link">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Back
+                </a>
+                
+                <!-- Red-marked items from your first instruction have been removed -->
+                <a href="user-health-info.html" class="nav-link active">Health Information</a>
+                <a href="log-meals.html" class="nav-link">Log Meals</a>
+                <a href="calorie-reports.html" class="nav-link">Calorie Reports</a>
+                <a href="my-diet-plans.html" class="nav-link">My Diet Plans</a>
+                <a href="weight-progress.html" class="nav-link">Weight Progress</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="sign-in.html" class="nav-link sign-out">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-header">
+                <h1 class="header-title">Welcome</h1>
+            </header>
+
+            <div class="content-wrapper">
+                <form class="health-info-form" action="log-meals.html" method="GET">
+                    
+                    <!-- Basic Information Card -->
+                    <div class="form-card">
+                        <h2 class="card-title">Basic Information</h2>
+                        
+                        <div class="input-grid">
+                            <div class="input-group">
+                                <label>AGE</label>
+                                <input type="number" name="age">
+                            </div>
+                            <div class="input-group">
+                                <label>CURRENT WEIGHT (KG)</label>
+                                <input type="number" name="current_weight" step="0.1">
+                            </div>
+                            <div class="input-group">
+                                <label>HEIGHT (CM)</label>
+                                <input type="number" name="height">
+                            </div>
+                            <div class="input-group">
+                                <label>GOAL WEIGHT (KG)</label>
+                                <input type="number" name="goal_weight" step="0.1">
+                            </div>
+                        </div>
+
+                        <div class="pill-group">
+                            <label class="pill-group-label">GENDER</label>
+                            <div class="pill-options">
+                                <label class="pill-radio"><input type="radio" name="gender" value="male"><span class="pill-btn">Male</span></label>
+                                <label class="pill-radio"><input type="radio" name="gender" value="female" checked><span class="pill-btn">Female</span></label>
+                                <label class="pill-radio"><input type="radio" name="gender" value="other"><span class="pill-btn">Other</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Goals & Activity Card -->
+                    <div class="form-card">
+                        <h2 class="card-title">Goals & Activity</h2>
+                        
+                        <div class="pill-group">
+                            <label class="pill-group-label">HEALTH GOAL</label>
+                            <div class="pill-options">
+                                <label class="pill-radio"><input type="radio" name="health_goal" value="muscle_gain" checked><span class="pill-btn">Muscle Gain</span></label>
+                                <label class="pill-radio"><input type="radio" name="health_goal" value="maintenance"><span class="pill-btn">Maintenance</span></label>
+                                <label class="pill-radio"><input type="radio" name="health_goal" value="endurance"><span class="pill-btn">Endurance</span></label>
+                                <label class="pill-radio"><input type="radio" name="health_goal" value="general_health"><span class="pill-btn">General Health</span></label>
+                            </div>
+                        </div>
+
+                        <div class="pill-group">
+                            <label class="pill-group-label">ACTIVITY LEVEL</label>
+                            <div class="pill-options">
+                                <label class="pill-radio"><input type="radio" name="activity_level" value="sedentary"><span class="pill-btn">Sedentary</span></label>
+                                <label class="pill-radio"><input type="radio" name="activity_level" value="light"><span class="pill-btn">Light</span></label>
+                                <label class="pill-radio"><input type="radio" name="activity_level" value="active"><span class="pill-btn">Active</span></label>
+                                <label class="pill-radio"><input type="radio" name="activity_level" value="very_active"><span class="pill-btn">Very Active</span></label>
+                                <label class="pill-radio"><input type="radio" name="activity_level" value="super_active"><span class="pill-btn">Super Active</span></label>
+                                <label class="pill-radio"><input type="radio" name="activity_level" value="inactive"><span class="pill-btn">Inactive</span></label>
+                            </div>
+                        </div>
+
+                        <div class="pill-group">
+                            <label class="pill-group-label">DIET PREFERENCE</label>
+                            <div class="pill-options">
+                                <label class="pill-radio"><input type="radio" name="diet" value="vegetarian"><span class="pill-btn">Vegetarian</span></label>
+                                <label class="pill-radio"><input type="radio" name="diet" value="vegan"><span class="pill-btn">Vegan</span></label>
+                                <label class="pill-radio"><input type="radio" name="diet" value="keto"><span class="pill-btn">Keto</span></label>
+                                <label class="pill-radio"><input type="radio" name="diet" value="mediterranean"><span class="pill-btn">Mediterranean</span></label>
+                                <label class="pill-radio"><input type="radio" name="diet" value="gluten_free"><span class="pill-btn">Gluten-Free</span></label>
+                                <label class="pill-radio"><input type="radio" name="diet" value="paleo"><span class="pill-btn">Paleo</span></label>
+                                <label class="pill-radio"><input type="radio" name="diet" value="whole30"><span class="pill-btn">Whole30</span></label>
+                                <label class="pill-radio"><input type="radio" name="diet" value="dash"><span class="pill-btn">DASH</span></label>
+                                <label class="pill-radio"><input type="radio" name="diet" value="flexitarian"><span class="pill-btn">Flexitarian</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="primary-btn submit-info-btn">Save Health Information</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

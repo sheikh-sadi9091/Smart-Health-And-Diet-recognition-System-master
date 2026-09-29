@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=dietitian/health-info.php">
+    <title>Health Track - Dietitian Health Information</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-layout">
+        
+        <!-- Sidebar Navigation (Dietitian Portal) -->
+        <aside class="sidebar dietitian-sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container small-logo">
+                    <div class="filled-heart-icon">
+                        <svg viewBox="0 0 24 24" fill="white" width="16" height="16">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <div class="sidebar-title-group">
+                        <span class="logo-text-small">Health Track</span>
+                        <span class="sidebar-subtext">Dietitian Portal</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav dietitian-nav">
+                <a href="dietitian-dashboard.html" class="nav-link dietitian-nav-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    Dashboard
+                </a>
+                <a href="dietitian-meal-plans.html" class="nav-link dietitian-nav-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    Meal Plans
+                </a>
+                <!-- Active state moved to Health Information -->
+                <a href="dietitian-health-info.html" class="nav-link dietitian-nav-link active">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                    Health Information
+                </a>
+                <a href="dietitian-recommendations.html" class="nav-link dietitian-nav-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Recommendations
+                </a>
+                <a href="dietitian-chat.html" class="nav-link dietitian-nav-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    Chat
+                </a>
+                <a href="dietitian-guides.html" class="nav-link dietitian-nav-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Nutritional Guides
+                </a>
+            </nav>
+
+            <div class="sidebar-footer border-top-footer">
+                <div class="user-profile-compact">
+                    <div class="avatar avatar-blue">SM</div>
+                    <div class="profile-text">
+                        <span class="profile-name">Dr. Sarah Miller</span>
+                        <span class="profile-role">Registered Dietitia</span>
+                    </div>
+                </div>
+                <a href="sign-in.html" class="nav-link sign-out">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content dietitian-main">
+            
+            <header class="page-header-clean">
+                <h1 class="page-main-title">Health Information</h1>
+                <p class="page-sub-title">Review the health data of the users you support</p>
+            </header>
+
+            <div class="content-wrapper full-width-wrap">
+                
+                <div class="health-info-split">
+                    <!-- Left Column: Search & User List -->
+                    <div class="left-col-users">
+                        
+                        <div class="search-users-box">
+                            <input type="text" placeholder="Search users...">
+                        </div>
+
+                        <!-- Alice Johnson (Selected) -->
+                        <div class="user-list-card selected-card">
+                            <div class="user-list-flex">
+                                <div class="avatar avatar-teal">AJ</div>
+                                <div class="user-list-info">
+                                    <h4>Alice Johnson</h4>
+                                    <p>Weight Loss</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bob Smith (Has Notification) -->
+                        <div class="user-list-card">
+                            <div class="user-list-flex">
+                                <div class="avatar avatar-teal">BS</div>
+                                <div class="user-list-info">
+                                    <h4>Bob Smith</h4>
+                                    <p>Muscle Gain</p>
+                                </div>
+                            </div>
+                            <div class="notif-dot"></div>
+                        </div>
+
+                        <!-- Carol White -->
+                        <div class="user-list-card">
+                            <div class="user-list-flex">
+                                <div class="avatar avatar-teal">CW</div>
+                                <div class="user-list-info">
+                                    <h4>Carol White</h4>
+                                    <p>Maintenance</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- David Lee (Has Notification) -->
+                        <div class="user-list-card">
+                            <div class="user-list-flex">
+                                <div class="avatar avatar-teal">DL</div>
+                                <div class="user-list-info">
+                                    <h4>David Lee</h4>
+                                    <p>Weight Loss</p>
+                                </div>
+                            </div>
+                            <div class="notif-dot"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column: User Health Details -->
+                    <div class="right-col-details">
+                        <div class="health-detail-panel">
+                            
+                            <!-- Profile Header -->
+                            <div class="hd-profile-header">
+                                <div class="hd-profile-left">
+                                    <div class="avatar avatar-teal avatar-large">AJ</div>
+                                    <div class="hd-profile-info">
+                                        <h3>Alice Johnson</h3>
+                                        <p>alice@example.com · 29 yrs</p>
+                                    </div>
+                                </div>
+                                <div class="hd-profile-right">
+                                    <span class="dt-badge badge-active">Active</span>
+                                </div>
+                            </div>
+
+                            <!-- Metrics Grid (3x2) -->
+                            <div class="metrics-grid">
+                                
+                                <div class="metric-box">
+                                    <div class="metric-header text-green">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><path d="M3 9l4.5-4.5L12 9"></path><path d="M21 9l-4.5-4.5L12 9"></path><path d="M3 9v6a4 4 0 0 0 8 0V9"></path><path d="M21 9v6a4 4 0 0 1-8 0V9"></path></svg>
+                                        <span>BMI</span>
+                                    </div>
+                                    <div class="metric-value">22.4</div>
+                                </div>
+
+                                <div class="metric-box">
+                                    <div class="metric-header text-blue">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                                        <span>Weight</span>
+                                    </div>
+                                    <div class="metric-value">64 kg</div>
+                                </div>
+
+                                <div class="metric-box">
+                                    <div class="metric-header text-blue">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="metric-value">1.9 L/day</div>
+                                </div>
+
+                                <div class="metric-box">
+                                    <div class="metric-header text-purple">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                                        <span>Sleep</span>
+                                    </div>
+                                    <div class="metric-value">7.1 h</div>
+                                </div>
+
+                                <div class="metric-box">
+                                    <div class="metric-header text-red">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                        <span>Resting HR</span>
+                                    </div>
+                                    <div class="metric-value">68 bpm</div>
+                                </div>
+
+                                <div class="metric-box">
+                                    <div class="metric-header text-orange">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                                        <span>Goal</span>
+                                    </div>
+                                    <div class="metric-value">Weight Loss</div>
+                                </div>
+
+                            </div>
+
+                            <!-- Bottom Conditions Grid -->
+                            <div class="conditions-grid">
+                                <div class="condition-box">
+                                    <div class="cond-title">Medical Conditions</div>
+                                    <div class="tag-badge bg-green-dim text-green">None</div>
+                                </div>
+                                <div class="condition-box">
+                                    <div class="cond-title">Allergies</div>
+                                    <div class="tag-badge bg-orange-dim text-orange">Peanuts</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
