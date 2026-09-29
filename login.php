@@ -131,14 +131,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <a href="register.php">Create Account</a>
                 </div>
 
-                <!-- Viva / Quick Demo Credentials Box -->
-                <div style="margin-top: 30px; padding: 16px; background-color: #1a1d24; border: 1px solid #2a2f3a; border-radius: 12px; font-size: 12px; color: #8c909a;">
-                    <div style="font-weight: 600; color: #ffffff; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Demo Accounts (Pre-configured):</div>
-                    <div><strong style="color: #2ecc71;">Admin:</strong> admin@healthtrack.com / admin123</div>
-                    <div><strong style="color: #3498db;">Approved Dietitian:</strong> sarah@healthtrack.com / dietitian123</div>
-                    <div><strong style="color: #f39c12;">Pending Dietitian:</strong> james@healthtrack.com / dietitian123</div>
-                    <div><strong style="color: #f2500c;">User:</strong> alice@example.com / user123</div>
-                </div>
             </div>
         </div>
     </div>
